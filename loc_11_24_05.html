@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+
+        .setform {
+            color: rgb(37, 196, 143);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        input[type=text] {
+            height: 25px;
+            width: 100%;
+            border: 2px solid rgba(158, 158, 158, 0.703);
+            border-radius: 3px;
+
+        }
+
+        input[type="text"]::placeholder {
+            color: rgba(158, 158, 158, 0.703);
+            font-size: large;
+            padding: 10px;
+
+        }
+
+        input[type="button"] {
+            height: 40px;
+            font-size: large;
+            padding: 10px 20px;
+            background-color: rgb(37, 196, 143);
+            color: beige;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        select {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table style="width: 100%; border: 1px solid rgb(232, 232, 232);" cellpadding="15">
+            <tr>
+                <th colspan="2" style="width: 100%; background-color: rgb(232, 232, 232);">
+                    <h1 style="font-weight: 400; margin: 10px 0; ">Create Account</h1>
+                </th>
+            </tr>
+            <!-- This is for name -->
+            <tr>
+                <td> <label for="fname" class="setform">First name*</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="enter your first name" required>
+
+                </td>
+                <td><label for="lname" class="setform">Last name</label><br>
+                    <input type="text" name="lname" id="lname" placeholder="enter your last name">
+                </td>
+            </tr>
+            <!-- This is for Email only -->
+            <tr>
+                <td colspan="2"> <label for="email" class="setform">Email</label><br>
+                    <input type="text" name="email" id="email" placeholder="enter your email">
+                </td>
+            </tr>
+            <!-- This is for password only -->
+            <tr>
+                <td> <label for="psw" class="setform">Password*</label><br>
+                    <input type="text" name="psw" id="psw" placeholder="enter your password" required>
+
+                </td>
+                <td><label for="cpsw" class="setform">Confirm Password*</label><br>
+                    <input type="text" name="cpsw" id="cpsw" placeholder="enter your password again" required>
+                </td>
+            </tr>
+            <!-- This is for gen and hobby -->
+            <tr>
+                <td> <label class="setform">Gender</label><br>
+                    <input type="radio" name="gen" id="gen-m" value="gen-m"><label for="gen-m">Male</label>
+                    <input type="radio" name="gen" id="gen-fm" value="gen-fm"><label for="gen-m">Female</label>
+
+                </td>
+                <td><label class="setform">hobbies</label><br>
+                    <input type="checkbox" name="hb" id="hb1" value="Music"><label for="hb1">Music</label>
+                    <input type="checkbox" name="hb" id="hb2" value="Sports"><label for="hb2">Sports</label>
+                    <input type="checkbox" name="hb" id="hb3" value="Travel"><label for="hb3">Travel</label>
+                    <input type="checkbox" name="hb" id="hb4" value="Movie"><label for="hb4">Movie</label>
+                </td>
+            </tr>
+            <!-- This is for income  -->
+            <tr>
+                <td> <label for="source" class="setform">Source of Income</label><br>
+
+                    <select name="source" id="source" style="width: 100%; height: 30px;">
+                        <option value="Employed">Employed</option>
+                    </select>
+
+                </td>
+                <td><label for="fname" class="setform">Income</label><br>
+                    <input type="range" min="20" max="100" name="fname" id="fname" value="20" style="width: 80%;">
+                    <input type="button" value="20k" style="padding: 10px;">
+                </td>
+            </tr>
+            <!-- This is for profile -->
+            <tr>
+                <td> <label for="file" class="setform">Uplode Profile Picture</label><br>
+                    <input type="file" name="file" id="file">
+
+                </td>
+                <td><label for="age" class="setform">Age</label><br>
+                    <input type="text" name="age" id="age" value="18" style="font-size: large;">
+                </td>
+            </tr>
+            <!-- This is for BIO -->
+            <tr>
+                <td colspan="2"> <label for="bio" class="setform">Bio</label><br>
+                    <!-- <input type="" name="fname" id="fname" style="width: 98%;"> -->
+                    <textarea id="bio" style="width: 98%; height: 100px;"></textarea>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 100%; background-color: rgb(232, 232, 232);" align="right">
+                    <input type="button" value="Create">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
