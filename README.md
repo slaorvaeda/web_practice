@@ -15,7 +15,7 @@ Header, footer, navigation bars, modals, etc.
 1. Clone the Repository
 bash
 Copy code
-git clone https://github.com/yourusername/web-practice.git
+git clone https://github.com/slaorvaeda/web-practice.git
 cd web-practice
 
 
